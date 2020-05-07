@@ -1,8 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Ömer Yaldırgan`,
+    description: `Frontend Developer from Ankara react,next,gatsby`,
+    author: `omeryaldirhan`,
+    username: '@omeryaldirganim',
+    url: 'https://omeryaldirgan.com',
+    socialLinks: {
+      email: { name: 'e-mail', url: 'mailto:omeryaldirgan@hotmail.com' ,description:'Send' },
+      github: { name: 'Github', url: 'https://github.com/omeryaldirgan',description:'Repositories on' },
+      codepen: { name: 'Codepen', url: 'https://codepen.io/yaldirgan' ,description:'Small works on'}
+    }
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -16,6 +23,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
+    'gatsby-plugin-dark-mode',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

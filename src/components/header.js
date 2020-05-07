@@ -1,35 +1,35 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+import styles from './styles/header.module.scss'
+import ThemeToggle from './themeToggler'
+const MENU = [
+  { name: 'Home', url: '/' },
+  { name: 'Blog', url: '/blog' },
+  { name: 'About', url: '/' },
+  { name: 'Contact', url: '/contact' }
+]
+//gatsby new file repo.git 
+const activeStyle = {
+  color: '#00BFAA',
+}
+const Header = () => {
+  //console.log("gelen" + siteTitle);
+  return(
+    <header className={styles.Header}>
+      <nav  className={`container ${styles.container}`}>
+          {
+            MENU.map(page=>{
+             return(
+              <Link key={page.name} to={page.url} className={styles.link} activeStyle={activeStyle}>{page.name}</Link>
+             )
+            })
+          }
+          <ThemeToggle/>
+      </nav>
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

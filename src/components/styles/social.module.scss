@@ -1,0 +1,14 @@
+.Social{
+    margin-top: 20px;
+    .link{
+        font-weight: var(--fw-light);
+        line-height: var(--lh-body);
+        color:var(--c-text);
+        display: inline-block;
+        margin-bottom: 10px;
+     span{
+         background-color: var(--bg-color);
+         padding: 3px;
+     }
+    }
+}
