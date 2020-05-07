@@ -6,7 +6,7 @@ import ThemeToggle from './themeToggler'
 const MENU = [
   { name: 'Home', url: '/' },
   { name: 'Blog', url: '/blog' },
-  { name: 'About', url: '/' },
+  { name: 'About', url: '/about' },
   { name: 'Contact', url: '/contact' }
 ]
 //gatsby new file repo.git 
@@ -34,7 +34,6 @@ const Header = () => {
 Header.propTypes = {
   siteTitle: PropTypes.string,
 }
-
 Header.defaultProps = {
   siteTitle: ``,
 }
