@@ -20,6 +20,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+     {//postlar için
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown`,
+        path: `${__dirname}/src/data`,
+      },
+    },  
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,

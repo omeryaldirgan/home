@@ -7,7 +7,7 @@ const Footer=()=>{
                 <div>
                     <p>©{new Date().getFullYear()}
                     {` `}
-                    I use Cookie <span className={styles.span}>❤</span>
+                    Beşiktaş JK <span className={styles.span}>❤</span>
                     </p>
                 </div>
                </div>
