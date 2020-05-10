@@ -21,8 +21,11 @@ body {
     }
 
 }
+.content{
+   min-height: calc(100vh - 120px);
+}
 .Main{
-  height: calc(100vh - 120px);
+  height: calc(100vh - 162px);
   display:flex;
   flex-direction: column;
   justify-content: center;

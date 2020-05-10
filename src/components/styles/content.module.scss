@@ -16,8 +16,11 @@
     }
     .html{
         color:var(--c-text);
-        letter-spacing: var(--lh-body);
         line-height: var(--lh-body);
         margin-bottom:1em ;
+        .gatsby-resp-image-image{
+            margin-top: 20px!important;
+        }
     }
+    
 }
