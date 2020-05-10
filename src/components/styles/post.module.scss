@@ -6,7 +6,11 @@
       font-weight: var(--fw-bold);
       margin-top: 1em;
       margin-bottom: 1em;
+    &:hover{
+      color:var (--bg-color)
     }
+    }
+    
     span{
       color:var(--c-default-light);
       font-weight: var(--fw-bold);
