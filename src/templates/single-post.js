@@ -1,8 +1,8 @@
 import React from "react"
-import SEO from "../components/Seo"
+import SEO from "../components/seo"
 import Layout from '../components/layout'
 import Content from '../components/content'
-
+import {graphql} from "gatsby";
 
 const SinglePost=({data})=>{
 const post=data.markdownRemark.frontmatter;
@@ -13,7 +13,8 @@ return(
     </Layout>
 )
 }
-export const postQuery = graphql`
+export const postQuery = graphql
+`
    query blogPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
