@@ -10,7 +10,7 @@
     --fs-body: 1rem;
     --fs-title: 1.1rem;
     --bg-color: #00BFAA;
-    
+    --color-red:#dc143c;
   
     --lh-body: 1.56;
     --gap: 24px;
@@ -21,8 +21,12 @@
  .light{
   --c-theme: #EEF0F2;
   --c-text: #20252D;
+  --c-default-hide: rgba(0, 0, 0, 0.12);
+  --c-default-light: rgba(0, 0, 0, 0.5);
  }
 .dark {
     --c-theme: #20252D;
     --c-text: #fff;
+    --c-default-hide: rgba(255, 255, 255, 0.12);
+    --c-default-light: rgba(255, 255, 255, 0.5);
 }

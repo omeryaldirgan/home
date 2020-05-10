@@ -13,6 +13,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -20,6 +21,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    
      {//postlar için
       resolve: `gatsby-source-filesystem`,
       options: {

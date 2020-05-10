@@ -1,0 +1,23 @@
+.Content{
+    padding: 32px 0;
+    border-top: 1px solid var(--c-default-hide);
+
+    h1{
+      font-weight: var(--fw-bold);
+      margin-top: 4px;
+      margin-bottom: 1em;
+    }
+    span{
+      color:var(--c-default-light);
+      font-weight: var(--fw-bold);
+    }
+    .point{
+        color:var(--color-red);
+    }
+    .html{
+        color:var(--c-text);
+        letter-spacing: var(--lh-body);
+        line-height: var(--lh-body);
+        margin-bottom:1em ;
+    }
+}

@@ -5,7 +5,6 @@ author: 'John Doe'
 image: ../../images/software2.jpg
 tags:
   - design
-  - tutorial
 ---
 
 Let dive into CSS guys, Let dive into CSS guys, Let dive into CSS guys, Let dive into CSS guys, Let dive into CSS guys, Let dive into CSS guys, Let dive into CSS guys, Let dive into CSS guys.

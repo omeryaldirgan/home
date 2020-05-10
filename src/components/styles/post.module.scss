@@ -1,0 +1,17 @@
+.Post{
+    padding: 32px 0;
+    border-top: 1px solid var(--c-default-hide);
+
+    h3{
+      font-weight: var(--fw-bold);
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+    span{
+      color:var(--c-default-light);
+      font-weight: var(--fw-bold);
+    }
+    .point{
+        color:var(--color-red);
+    }
+}

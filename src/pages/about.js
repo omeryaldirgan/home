@@ -7,7 +7,7 @@ const About=()=>{
     return(
      <Layout>
         <SEO title="About"/>
-            <p className='color-text'> I'm Ömer Yaldırgan</p>
+            <p className='color-text'> I'm Ömer Yaldırgan (preparing data)</p>
      </Layout>
     )
 }
