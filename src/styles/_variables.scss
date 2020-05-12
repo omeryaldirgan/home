@@ -6,9 +6,9 @@
     --fw-bold: 500;
     --fw-extra-bold: 800;
     --fs-base: 16px;
-    --fs-small: 0.92rem;
+    --fs-small: 0.8rem;
     --fs-body: 1rem;
-    --fs-title: 1.1rem;
+    --fs-title: 1.04rem;
     --bg-color: #00BFAA;
     --color-red:#dc143c;
   
@@ -19,7 +19,8 @@
     --footer:50px;
   }
  .light{
-  --c-theme: #EEF0F2;
+  //--c-theme: #EEF0F2;
+  --c-theme:#fff;
   --c-text: #20252D;
   --c-default-hide: rgba(0, 0, 0, 0.12);
   --c-default-light: rgba(0, 0, 0, 0.5);

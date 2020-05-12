@@ -25,7 +25,6 @@ exports.createPages=({actions,graphql})=>{
         edges {
           node {
             frontmatter {
-              author
               tags
             }
             fields {

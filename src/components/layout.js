@@ -24,6 +24,8 @@ export const query= graphql`
   fragment SiteMetaData on Site {
     siteMetadata {
       username
+      title
+      image
       socialLinks {
         github{
           name

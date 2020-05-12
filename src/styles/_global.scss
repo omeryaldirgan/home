@@ -48,7 +48,7 @@ body {
 .Main-h3{
     font-weight: var(--fw-light);
     @include mq("tablet"){
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 }
 
@@ -62,4 +62,9 @@ body {
     line-height: 1.1;
     letter-spacing: -0.01562em;
 }
-
+.display{
+   display: none;
+   @include mq("tablet"){
+       display: block;
+   }
+}

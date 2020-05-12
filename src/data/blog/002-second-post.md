@@ -1,7 +1,7 @@
 ---
-title: 'First Post - Introduction'
+title: 'Second Post - Introduction'
 date: 2018-12-01 07:00:00
-flag: ../flag/usa.png
+flag: ../flag/turkey.png
 read: '2 min to read'
 tags:
   - code

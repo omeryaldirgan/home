@@ -3,23 +3,27 @@ import {graphql} from 'gatsby';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Post from "../components/post"
-
-const Blog=(props)=>{
-    const posts = props.data.allMarkdownRemark.edges;
+const Blog=({data:{postListQuery,metaData,heroData}})=>{
+    
+    const posts = postListQuery.edges;
+    const {title}=metaData.siteMetadata;
+    const profileImage=heroData.childImageSharp.fluid;
     return(
      <Layout>
         <SEO title="Blog"/>
-          <h1 className='color-text'>Blog</h1>
           {
               posts.map(({node})=>(
                   <Post
-                  key={node.id}
-                  slug={node.fields.slug}
-                  title={node.frontmatter.title}
-                  date={node.frontmatter.date}
-                  body={node.excerpt}
-                  tags={node.frontmatter.tags}
-                  
+                    key={node.id}
+                    slug={node.fields.slug}
+                    title={node.frontmatter.title}
+                    date={node.frontmatter.date}
+                    body={node.excerpt}
+                    tags={node.frontmatter.tags}
+                    flag={node.frontmatter.flag.childImageSharp.fluid}
+                    read={node.frontmatter.read}
+                    profileTitle={title}
+                    profileImage={profileImage}
                   />
               ))
           }
@@ -28,24 +32,46 @@ const Blog=(props)=>{
 }
 
 export const postListQuery = graphql`
-  query postListQuery{
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date(formatString: "MMMM Do YYYY")
-            tags
-          }
-          fields {
-            slug
-          }
+  {
+    metaData: site {
+      ...SiteMetaData
+    }
+    heroData: file(name: { eq: "profile" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
         }
       }
     }
+   postListQuery: allMarkdownRemark(
+        sort: { fields: [frontmatter___date], order: DESC }
+        filter: {
+          fileAbsolutePath: { regex: "/data/blog/" }
+        }
+      ) {
+        edges {
+          node {
+            id
+            frontmatter {
+              title
+              date(formatString: "MM Do YYYY")
+              tags
+              read
+              flag {
+                childImageSharp {
+                  fluid(maxWidth:32) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+            fields {
+              slug
+            }
+            excerpt(pruneLength: 200)
+          }
+        }
+      }
   }
 `
 export default Blog

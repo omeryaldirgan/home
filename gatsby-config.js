@@ -5,6 +5,7 @@ module.exports = {
     author: `omeryaldirhan`,
     username: '@omeryaldirganim',
     url: 'https://omeryaldirgan.com',
+    image: 'src/images/favicon.png',
     socialLinks: {
       email: { name: 'e-mail', url: 'mailto:omeryaldirgan@hotmail.com' ,description:'Send' },
       github: { name: 'Github', url: 'https://github.com/omeryaldirgan',description:'Repositories on' },

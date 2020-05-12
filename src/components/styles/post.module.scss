@@ -1,21 +1,43 @@
 .Post{
     padding: 32px 0;
-    border-top: 1px solid var(--c-default-hide);
-
+  
     h3{
-      font-weight: var(--fw-bold);
-      margin-top: 1em;
-      margin-bottom: 1em;
-    & a:hover{
-      color:var(--bg-color)
+      font-weight: var(--fw-extra-bold);
+      margin-top: .3em;
+      margin-bottom: .3em;
+      font-size: 1.4em;
+      display: inline-block;
+      a{
+        display: flex;
+        align-items: center;
+      }
+      a:hover{
+        color:var(--bg-color)
+      }
+      .flag{
+         height: 19px;
+         width: 19px;
+         margin-left: 5px;
+      }
     }
+    .text{
+      font-size: var( --fs-small);
+      color:var(--c-text);
     }
+    .details{
+      display: flex;
+      align-items: center;
+      font-size: var(--fs-small);
+      margin-bottom: 7px;
+      span{
+        color:var(--c-default-light);
+        font-weight: var(--fw-bold);
+        margin-left: 5px;
+      }
+      .point{
+          color:var(--color-red);
+      }
+    }
+   
     
-    span{
-      color:var(--c-default-light);
-      font-weight: var(--fw-bold);
-    }
-    .point{
-        color:var(--color-red);
-    }
 }
