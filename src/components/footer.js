@@ -7,7 +7,7 @@ const Footer=()=>{
                 <div>
                     <p>©{new Date().getFullYear()}
                     {` `}
-                    Beşiktaş JK <span className={styles.span}>❤</span>
+                    I Have A Dream <span className={styles.span}>❤</span>
                     </p>
                 </div>
                </div>
